@@ -1,0 +1,97 @@
+.pagina img {
+    /* LogoCondomino */
+    opacity: 0.5;
+    width: 40%;
+    height: 45%;
+    max-width: 259px;
+    min-width: 249px;
+    position: absolute;
+    left: 31%;
+    top: 31%;
+    z-index: -1;
+}
+
+.borda {
+    /* Borda */
+    display: block;
+    margin-top: 40px;
+    width: 250px;
+    height: 195px;
+    border: 1px solid #9AAC99;
+    border-radius: 3px;
+    align-items: center;
+    align-items: flex-start;
+}
+
+.borda label {
+    display: inline-block;
+    margin-left: 18%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.borda input {
+    width: 160px;
+    display: flex;
+    border: 1px solid #9AAC99;
+    border-radius: 3px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.btn-entrar {
+    margin-top: 15px;
+    margin-left: 25%;
+    background: #9AAC99;
+    border-radius: 3px;
+    border-style: none;
+    width: 106px;
+    /*Texto*/
+    color: #FFFF;
+    font: bold 16px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.btn-cadastrar{
+    margin-top: 15px;
+    margin-left: 28%;
+    background: #9AAC99;
+    border-radius: 3px;
+    border-style: none;
+    width: 106px;
+    
+    /*Texto*/
+    color: #FFFF;
+    font: bold 16px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.borda a {
+    display: inline-block;
+    text-align: center;
+    margin-left: 18%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #0069A5;
+}
+
+legend {
+    background-color: #9FCFB9;
+    width: 80px;
+    text-align: center;
+}

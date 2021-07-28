@@ -1,0 +1,14 @@
+.Head {
+    background-color: white;
+    height: 30%;
+    text-align: center;
+}
+
+.Head h2,
+h3 {
+    color: #9AAC99;
+}
+
+h2 {
+    font: bold;
+}
