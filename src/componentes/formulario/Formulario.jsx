@@ -3,8 +3,11 @@ import vizinhanca from "../../asserts/image/vizinhanca.png"
 //import Api from '../../utils/Api'
 import './formulario.css'
 import axios from 'axios';
+import {useHistory} from "react-router-dom";
 
 function Formulario(props) {
+
+    const janela = useHistory();
 
     const [values, setValues] = useState({})
     //Const [values] pega os valores dos campos
@@ -16,13 +19,13 @@ function Formulario(props) {
             'http://localhost:8080/usuarios' : 
             'http://localhost:8080/autenticacoes'}`, values)
         .then(function(response){
-
-
             if(!props.eCadastro){
                 localStorage.setItem("token", response.data.token)
                 localStorage.setItem("usuarioLogado", response.data); 
 
                 console.log(localStorage.getItem("token"))
+
+                janela.push("/listagem");
 
             }else if (response === 201){
                 window.location.href("/")
@@ -83,7 +86,7 @@ function Formulario(props) {
                     </>
                     :
                     <>
-                    <a href="">Esqueceu a senha?</a>
+                    <a href="/">Esqueceu a senha?</a>
                     <a href="/cadastro">Não possui cadastro?</a>
                     </>}
 

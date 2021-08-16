@@ -1,6 +1,8 @@
 import React from "react";
 import Login from "./componentes/Login"
 import Cadastro from "./componentes/Cadastro"
+import Listagem from "./componentes/Listagem"
+
 import {
   BrowserRouter,
   Route,
@@ -9,11 +11,11 @@ import {
 
 function App() {
   return (
-
     <>
       <BrowserRouter>
           <Route path="/" exact component={Login}/>
           <Route path="/cadastro" component={Cadastro}/>
+          <Route path="/listagem" component={Listagem}/>
       </BrowserRouter>
     </>
   );
